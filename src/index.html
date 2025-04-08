@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="output.css">
 
   <title>Frontend Mentor | [Blogr]</title>
@@ -14,59 +15,76 @@
 <body>
 
   <header>
-    <div class="p-10 bg-black">
+    <div class="bg-Cred bg-[url(/images/bg-pattern-intro-mobile.svg)] sm:bg-[url(/images/bg-pattern-intro-desktop.svg)] bg-center bg-no-repeat rounded-bl-[6rem] h-[550px] md:h-[480px] flex flex-col items-center">
 
-      <div class="flex flex-row justify-between items-start p-10">
+      <div class="flex flex-row justify-between items-center p-10 w-full md:w-[90%]">
 
         <div id="logo">
           <img src="/images/logo.svg" alt="Logo Blogr">
         </div>
         
-        <div class="menu-hamburguer bg-lig">
+        <div class="menu-hamburguer">
 
           <div class="hamb relative">
             <img src="/images/icon-hamburger.svg" alt="icon hamburguer">
             <img class="hidden" src="/images/icon-close.svg" alt="icon close">
           </div>
           
-          <div class="content-drop absolute bg-white p-6 rounded right-13 top-15">
+          <div class="hidden">
 
-            <div class="dropdown">
-              <p class="flex flex-row items-center gap-3">Product <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-              <ul>
-                <li>Overview</li>
-                <li>Pricing</li>
-                <li>Marketplace</li>
-                <li>Features</li>
-                <li>Integrations</li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <p class="flex flex-row items-center gap-3">Company <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-              <ul>
-                <li>About</li>
-                <li>Team</li>
-                <li>Blog</li>
-                <li>Careers</li>
-              </ul>
-            </div>
-            <div class="dropdown">
-              <p class="flex flex-row items-center gap-3">Connect <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-              <ul>
-                <li>Contact</li>
-                <li>Newsletter</li>
-                <li>LinkedIn</li>
-              </ul>
-            </div>
-            <div class="log-sign">
-              <button>Login</button>
-              <button>Sign Up</button>
-            </div>
+            <div class="content-drop absolute bg-white p-6 rounded-[1rem] right-15 top-22 w-[80%] z-1 flex  flex-col items-center gap-4">
+            
+              <div class="dropdown flex flex-col items-center">
+                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Product <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+                <ul class="hidden flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
+                  <li>Overview</li>
+                  <li>Pricing</li>
+                  <li>Marketplace</li>
+                  <li>Features</li>
+                  <li>Integrations</li>
+                </ul>
+              </div>
 
+              <div class="dropdown flex flex-col items-center">
+                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Company <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+                <ul class="hidden flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
+                  <li>About</li>
+                  <li>Team</li>
+                  <li>Blog</li>
+                  <li>Careers</li>
+                </ul>
+              </div>
+            
+              <div class="dropdown flex flex-col items-center">
+                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Connect <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+                <ul class="hidden flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
+                  <li>Contact</li>
+                  <li>Newsletter</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+
+              <div class="log-sign flex flex-col gap-3 mt-4">
+                <button>Login</button>
+                <button class="bg-gradient-to-l from-Cred to-VLred p-1.5 w-32 rounded-4xl text-white font-bold">Sign Up</button>
+              </div>
+
+            </div>
           </div>
 
         </div>
         
+      </div>
+
+      <div class="heading-title p-7 flex flex-col items-center gap-6">
+        <h1 class="font-overpass text-white text-4xl text-center font-medium md:text-5xl lg:text-6xl">A modern publishing platform</h1>
+        <p class="text-center text-[1rem] md:text-2xl text-Grayish-blue font-overpass">Grow your audience and build your online brand</p>
+
+        <div class="btns flex flex-row justify-center items-center gap-4">
+          <button class="bg-white pt-2 pb-2 pl-4 pr-4 rounded-3xl font-ubuntu font-bold text-Cred scale-95 transition-all ease-in-out hover:scale-110 hover:cursor-pointer hover:bg-Very-light-red hover:text-white hover:bg-light-red2">Start for Free</button>
+          
+          <button class=" font-ubuntu text-white font-bold border-white border-2 pt-2 pb-2 pl-4 pr-4 rounded-3xl scale-95 transition-all ease-in-out hover:cursor-pointer hover:bg-white hover:text-Cred hover:scale-110">Learn More</button>
+        </div>
       </div>
 
     </div>
@@ -74,11 +92,6 @@
   </header>
 
 
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
 
   Designed for the future
 

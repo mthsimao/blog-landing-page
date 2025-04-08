@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+    --color-light-red1: hsl(356, 100%, 66%);
+    --color-light-red2: hsl(355, 100%, 74%);
+    --color-dark-blue: hsl(208, 49%, 24%);
+
+    --color-Grayish-blue: hsl(240, 2%, 79%);
+    --color-dark-grayish-blue: hsl(207, 13%, 34%);
+    --color-dark-black-blue: hsl(240, 10%, 16%);
+
+    --color-VLred: hsl(13, 100%, 72%);
+    --color-Cred: hsl(353, 100%, 62%);
+
+    --color-dark-gray-blue2: hsl(237, 17%, 21%);
+    --color-desaturated-blue: hsl(237, 23%, 32%);
+
+    --font-overpass: "Overpass", sans-serif;
+    --font-ubuntu: "Ubuntu", sans-serif;
+}
