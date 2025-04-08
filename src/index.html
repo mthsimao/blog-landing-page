@@ -4,36 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   
   <link rel="stylesheet" href="./output.css">
 
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
-  Product
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+  <header>
+    <div class="bg-[url(/images/bg-pattern-intro-mobile.svg)] bg-no-repeat bg-center h-full p-[1rem]">
 
-  Company
+      <div class="flex flex-row justify-between items-start p-10">
 
-  About
-  Team
-  Blog
-  Careers
+        <div id="logo">
+          <img src="/images/logo.svg" alt="Logo Blogr">
+        </div>
+        
+        <div class="menu-hamburguer bg-lig">
 
-  Connect
+          <div class="hamb relative">
+            <img src="/images/icon-hamburger.svg" alt="icon hamburguer">
+            <img class="hidden" src="/images/icon-close.svg" alt="icon close">
+          </div>
+          
+          <div class="content-drop absolute bg-white p-6 rounded right-13 top-15">
+            <div class="dropdown">
+              <p class="flex flex-row items-center gap-3">Product <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <p class="flex flex-row items-center gap-3">Company <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <p class="flex flex-row items-center gap-3">Connect <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
+            <div class="log-sign">
+              <button>Login</button>
+              <button>Sign Up</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
-  Contact
-  Newsletter
-  LinkedIn
-  
-  Login
-  Sign Up
+
+  </header>
+
 
   A modern publishing platform
   Grow your audience and build your online brand
