@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lightred: hsl(356, 100%, 66%);
+  --color-Vlight-red: hsl(355, 100%, 74%);
+  --color-Vdark-blue: hsl(208, 49%, 24%);
+
+  --color-Grayish: hsl(240, 2%, 79%);
+  --color-VDarkGrayishBlue: hsl(207, 13%, 34%);
+  --color-VDarkBlackBlue: hsl(240, 10%, 16%);
+
+  --color-Very-light-red3: hsl(13, 100%, 72%);
+  --color-light-red2: hsl(353, 100%, 62%);
+
+  --color-Very-dark-gray-blue: hsl(237, 17%, 21%);
+  --color-Very-dark-desaturated-blue: hsl(237, 23%, 32%);
+}
