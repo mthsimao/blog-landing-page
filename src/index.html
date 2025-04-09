@@ -15,9 +15,9 @@
 <body>
 
   <header>
-    <div class="bg-Cred bg-[url(/images/bg-pattern-intro-mobile.svg)] sm:bg-[url(/images/bg-pattern-intro-desktop.svg)] bg-center bg-no-repeat rounded-bl-[6rem] h-[550px] md:h-[480px] flex flex-col items-center">
+    <div class="bg-Cred bg-[url(/images/bg-pattern-intro-mobile.svg)] sm:bg-[url(/images/bg-pattern-intro-desktop.svg)] bg-center bg-no-repeat rounded-bl-[6rem] h-[550px] md:h-[480px] flex flex-col items-center gap-6">
 
-      <div class="flex flex-row justify-between items-center p-10 w-full md:w-[90%]">
+      <div class="flex flex-row justify-between items-center p-8 w-full md:w-[90%]">
 
         <div id="logo">
           <img src="/images/logo.svg" alt="Logo Blogr">
@@ -81,9 +81,9 @@
         <p class="text-center text-[1rem] md:text-2xl text-Grayish-blue font-overpass">Grow your audience and build your online brand</p>
 
         <div class="btns flex flex-row justify-center items-center gap-4">
-          <button class="bg-white pt-2 pb-2 pl-4 pr-4 rounded-3xl font-ubuntu font-bold text-Cred scale-95 transition-all ease-in-out hover:scale-110 hover:cursor-pointer hover:bg-Very-light-red hover:text-white hover:bg-light-red2">Start for Free</button>
+          <button class="btn text-Cred bg-white hover:bg-light-red2 hover:text-white">Start for Free</button>
           
-          <button class=" font-ubuntu text-white font-bold border-white border-2 pt-2 pb-2 pl-4 pr-4 rounded-3xl scale-95 transition-all ease-in-out hover:cursor-pointer hover:bg-white hover:text-Cred hover:scale-110">Learn More</button>
+          <button class="btn border-2 border-white text-white  hover:text-Cred hover:bg-white">Learn More</button>
         </div>
       </div>
 
@@ -92,31 +92,73 @@
   </header>
 
 
+  <main>
 
-  Designed for the future
+    <div class="content-1 mt-[4rem] flex flex-col gap-16 w-full items-center">
 
-  Introducing an extensible editor
-  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
-  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
-  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
-  change the looks of a blog.
+      <div class="title">
+        <h1 class="text-dark-blue text-2xl font-[600] text-center pt-4 pb-4">Designed for the future</h1>
+      </div>
 
-  Robust content management
-  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
-  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+      <div class="flex flex-col items-center lg:flex-row-reverse lg:justify-evenly">
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          <div class="bg-[url(/images/illustration-editor-mobile.svg)] bg-center bg-no-repeat bg-cover h-[280px] w-[310px] mb-8 lg-:p-10 lg-:mb-0 lg:w-[500px] lg:h-[440px]">
+          
+        </div>
+        
+        <div class="content md:p-4">
 
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          <div class="container mb-4 w-full items-center lg:items-start">
+            <h2 class="w-[240px] text-center lg:text-left lg:w-auto ">Introducing an extensible editor</h2>
+            <p class="w-[300px] text-center lg:text-left lg:w-[500px] md:text-[14px]">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+          </div>
+          
+          <div class="container mb-4 w-full items-center lg:items-start">
+            <h2 class="w-[240px] text-center lg:text-left lg:w-auto ">Robust content management</h2>
+            <p class="w-[300px] text-center lg:text-left lg:w-[500px] md:text-[14px]"> Flexible content management enables users to easily move through posts. Increase the usability your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in control.</p>
+          </div>
+        </div>
+      </div>
 
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
+
+    </div>
+
+  
+    <div class="bg-dark-gray-blue2 bg-[url(/images/bg-pattern-circles.svg)] bg-left bg-no-repeat h-[340px] mt-[10rem] flex flex-row items-center">
+
+      <div class="flex flex-row items-center justify-center gap-[6rem] w-full">
+      
+        <div class="img">
+          <img src="/images/illustration-phones.svg">
+        </div>
+
+        <div class="element flex flex-col gap-4">
+          <h2 class="text-2xl text-white">State of the Art Infrastructure</h2>
+          <p class="w-[300px] text-dark-grayish-blue">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      
+      </div>
+    
+    </div>
+  
+
+  <h2>Free, open, simple</h2>
+  <p>
+    Blogr is a free and open source application backed by a large community of helpful developers. It supports
+    features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+    and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+  </p>
+
+  <h2>Powerful tooling</h2>
+  <p>
+    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+    capable of producing even the most complicated sites.
+  </p>
+
+  </main>
 
   Product
 
