@@ -94,7 +94,7 @@
 
   <main>
 
-    <div class="content-1 mt-[4rem] flex flex-col gap-16 w-full items-center">
+    <div class="content-1 bg-white z-[8] mt-[4rem] flex flex-col gap-16 w-full items-center">
 
       <div class="title">
         <h1 class="text-dark-blue text-2xl font-[600] text-center pt-4 pb-4">Designed for the future</h1>
@@ -124,25 +124,23 @@
     </div>
 
   
-    <div class="bg-dark-gray-blue2 bg-[url(/images/bg-pattern-circles.svg)] bg-left bg-no-repeat h-[340px] mt-[10rem] flex flex-row items-center">
-
-      <div class="flex flex-row items-center justify-center gap-[6rem] w-full">
-      
-        <div class="img">
-          <img src="/images/illustration-phones.svg">
-        </div>
-
-        <div class="element flex flex-col gap-4">
-          <h2 class="text-2xl text-white">State of the Art Infrastructure</h2>
-          <p class="w-[300px] text-dark-grayish-blue">
-            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-          </p>
-        </div>
-      
+    <div class="bg-dark-gray-blue2 h-[520px] mt-[10rem] rounded-tr-[4rem] rounded-bl-[4rem] flex flex-col items-center relative">
+        
+      <div class="imagem1-wrapper overflow-hidden relative">
+          <img src="/images/bg-pattern-circles.svg" class="imagem1 relative top-[-30%] h-[400px] " />
       </div>
-    
-    </div>
+
+      <img class="absolute top-[-8rem] left-[50%] translate-x-[-50%] z-10 max-w-[320px]" src="/images/illustration-phones.svg">
+
+      <div class="element flex flex-col gap-4 absolute bottom-6 p-10 ">
+
+          <h2 class="text-3xl text-white text-center font-overpass">State of the Art Infrastructure</h2>
+          <p class=" text-Grayish-blue text-center font-ubuntu">
+              With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+      </div>
+  </div>
   
 
   <h2>Free, open, simple</h2>
@@ -180,6 +178,7 @@
   Contact
   Newsletter
   LinkedIn
+
 
 </body>
 </html>
