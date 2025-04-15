@@ -221,38 +221,20 @@
   .z-\[8\] {
     z-index: 8;
   }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
   .mt-\[4rem\] {
     margin-top: 4rem;
   }
+  .mt-\[8rem\] {
+    margin-top: 8rem;
+  }
   .mt-\[10rem\] {
     margin-top: 10rem;
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
-  }
-  .mb-4 {
-    margin-bottom: calc(var(--spacing) * 4);
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -283,6 +265,9 @@
   }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-\[60\%\] {
+    width: 60%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -553,6 +538,11 @@
       width: 90%;
     }
   }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
   .md\:p-4 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 4);
@@ -590,6 +580,11 @@
       width: auto;
     }
   }
+  .lg\:flex-row {
+    @media (width >= 64rem) {
+      flex-direction: row;
+    }
+  }
   .lg\:flex-row-reverse {
     @media (width >= 64rem) {
       flex-direction: row-reverse;
@@ -617,23 +612,6 @@
     }
   }
 }
-.container {
-  padding: 1rem 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.container h2 {
-  color: var(--color-dark-blue);
-  font-family: var(--font-overpass);
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-.container p {
-  color: var(--color-dark-grayish-blue);
-  font-family: var(--font-ubuntu);
-}
 .btn {
   font-family: var(--font-ubuntu);
   font-weight: bold;
@@ -644,6 +622,29 @@
 .btn:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.text-content {
+  padding: 1rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.text-content-e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.text-content-e h2 {
+  color: var(--color-dark-blue);
+  font-family: var(--font-overpass);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.text-content-e p {
+  color: var(--color-dark-grayish-blue);
+  font-family: var(--font-ubuntu);
 }
 @property --tw-translate-x {
   syntax: "*";

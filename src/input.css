@@ -19,26 +19,6 @@
     --font-ubuntu: "Ubuntu", sans-serif;
 }
 
-.container {
-    padding: 1rem 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.container h2 {
-    color: var(--color-dark-blue);
-    font-family: var(--font-overpass);
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-
-.container p {
-    color: var(--color-dark-grayish-blue);
-    font-family: var(--font-ubuntu);
-}
-
 .btn {
     font-family: var(--font-ubuntu);
     font-weight: bold;
@@ -50,4 +30,31 @@
 .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.text-content {
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.text-content-e {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.text-content-e h2 {
+    color: var(--color-dark-blue);
+    font-family: var(--font-overpass);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.text-content-e p {
+    color: var(--color-dark-grayish-blue);
+    font-family: var(--font-ubuntu);
 }
