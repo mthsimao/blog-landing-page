@@ -17,6 +17,7 @@
 
     --font-overpass: "Overpass", sans-serif;
     --font-ubuntu: "Ubuntu", sans-serif;
+    --breakpoint-xs: 25rem;
 }
 
 .btn {
@@ -55,4 +56,14 @@
 .text-content p {
     color: var(--color-dark-grayish-blue);
     font-family: var(--font-ubuntu);
+}
+
+.link-footer {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-bottom: 4px;
+}
+
+.link-footer:hover {
+    transform: scale(1.1);
 }
