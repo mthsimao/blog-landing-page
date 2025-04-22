@@ -25,43 +25,59 @@
         
         <div class="menu-hamburguer">
 
-          <div class="hamb relative">
-            <img src="/images/icon-hamburger.svg" alt="icon hamburguer">
-            <img class="hidden" src="/images/icon-close.svg" alt="icon close">
+          <div class="hambNav relative" id="dropd" onclick="menu()">
+            <img src="/images/icon-hamburger.svg" id="img1" alt="icon hamburguer">
           </div>
           
-          <div class="hidden">
+          <div class="hidden" id="menu">
 
-            <div class="content-drop absolute bg-white p-6 rounded-[1rem] right-15 top-22 w-[80%] z-1 flex  flex-col items-center gap-4 shadow-2xl">
+            <div class="content-drop absolute bg-white p-6 rounded-[1rem] right-6 top-22 w-[90%] z-1 flex  flex-col items-center gap-4 shadow-2xl">
             
               <div class="dropdown flex flex-col items-center">
-                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Product <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-                <ul class="flex flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
-                  <li>Overview</li>
-                  <li>Pricing</li>
-                  <li>Marketplace</li>
-                  <li>Features</li> 
-                  <li>Integrations</li>
-                </ul>
+
+                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold ">Product 
+                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
+                </a>
+
+                <div class="dropdown-content pl-6 hidden">
+                  <ul class="text-gray-600 text-left">
+                    <li class="link-footer"><a href="#" >Pricing</a></li>
+                    <li class="link-footer"><a href="#">Overview</a></li>
+                    <li class="link-footer"><a href="#">Marketplace</a></li>
+                    <li class="link-footer"><a href="#">Features</a></li>
+                    <li class="link-footer"><a href="#">Integrations</a></li>
+                  </ul>
+                </div>
+
               </div>
 
               <div class="dropdown flex flex-col items-center">
-                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Company <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-                <ul class="flex flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
-                  <li>About</li>
-                  <li>Team</li>
-                  <li>Blog</li>
-                  <li>Careers</li>
-                </ul>
+                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold ">Company 
+                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
+                </a>
+
+                <div class="dropdown-content pl-6 hidden">
+                  <ul class="text-gray-600 text-left">
+                    <li class="link-footer"><a href="#">About</a></li>
+                    <li class="link-footer"><a href="#">Team</a></li>
+                    <li class="link-footer"><a href="#">Blog</a></li>
+                    <li class="link-footer"><a href="#">Careers</a></li>
+                  </ul>
+                </div>
               </div>
             
               <div class="dropdown flex flex-col items-center">
-                <p class="flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Connect <img src="/images/icon-arrow-dark.svg" alt="arrow down"></p>
-                <ul class="flex flex-col gap-2 items-center font-ubuntu text-sm text-dark-grayish-blue">
-                  <li>Contact</li>
-                  <li>Newsletter</li>
-                  <li>LinkedIn</li>
-                </ul>
+                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold ">Connect 
+                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
+                </a>
+
+                <div class="dropdown-content pl-6 hidden">
+                  <ul class="text-gray-600 text-left">
+                    <li class="link-footer"><a href="#">Contact</a></li>
+                    <li class="link-footer"><a href="#">Newsletter</a></li>
+                    <li class="link-footer"><a href="#">LinkedIn</a></li>
+                  </ul>
+                </div>
               </div>
 
               <div class="log-sign flex flex-col gap-3 mt-4">
@@ -129,7 +145,7 @@
 
       <img class="absolute top-[-8rem] translate-x-[-50%] left-[50%] z-10 w-[320px] lg:left-[20%] lg:top-[-20%] lg:w-[500px]" src="/images/illustration-phones.svg">
 
-      <div class="element flex flex-col items-center gap-4 absolute bottom-6 p-10 lg:left-[70%] lg:translate-x-[-50%] lg:items-start lg:p-0 lg:pb-18">
+      <div class="element flex flex-col items-center gap-4 absolute bottom-6 lg:left-[70%] lg:translate-x-[-50%] lg:items-start lg:p-0 lg:pb-18">
         <h2 class="text-3xl text-white text-center font-overpass  lg:text-left">State of the Art Infrastructure</h2>
         <p class=" text-Grayish-blue text-center font-ubuntu w-[300px] tracking-wide lg:lg:w-[540px] lg:text-left ">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
       </div>
@@ -214,7 +230,7 @@
   </footer>
 
   
-
+  <script src="script.js"></script>
 
 </body>
 </html>
