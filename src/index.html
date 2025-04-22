@@ -17,79 +17,55 @@
   <header>
     <div class="bg-Cred bg-[url(/images/bg-pattern-intro-mobile.svg)] sm:bg-[url(/images/bg-pattern-intro-desktop.svg)] bg-center bg-no-repeat rounded-bl-[6rem] h-[550px] md:h-[480px] flex flex-col items-center gap-6">
 
-      <div class="flex flex-row justify-between items-center p-8 w-full md:w-[90%]">
+      <div class="flex flex-row justify-between items-center p-8  md:w-[95%] md:justify-start md:gap-8 lg:w-[90%]">
 
         <div id="logo">
           <img src="/images/logo.svg" alt="Logo Blogr">
         </div>
-        
-        <div class="menu-hamburguer">
 
-          <div class="hambNav relative" id="dropd" onclick="menu()">
-            <img src="/images/icon-hamburger.svg" id="img1" alt="icon hamburguer">
-          </div>
+        <div class="nav flex flex-row justify-between items-center w-full">
+
+          <div class="menu flex flex-row gap-4">
           
-          <div class="hidden" id="menu">
-
-            <div class="content-drop absolute bg-white p-6 rounded-[1rem] right-6 top-22 w-[90%] z-1 flex  flex-col items-center gap-4 shadow-2xl">
-            
-              <div class="dropdown flex flex-col items-center">
-
-                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold ">Product 
-                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
-                </a>
-
-                <div class="dropdown-content pl-6 hidden">
-                  <ul class="text-gray-600 text-left">
-                    <li class="link-footer"><a href="#" >Pricing</a></li>
-                    <li class="link-footer"><a href="#">Overview</a></li>
-                    <li class="link-footer"><a href="#">Marketplace</a></li>
-                    <li class="link-footer"><a href="#">Features</a></li>
-                    <li class="link-footer"><a href="#">Integrations</a></li>
-                  </ul>
-                </div>
-
+            <div class="dropdown">
+              <a href="#" class="dropbtn relative flex flex-row items-center gap-1 text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Product <img src="/images/icon-arrow-light.svg"></a>
+              <div class="dropdown-content absolute top-[10%] flex flex-col bg-white p-4 w-[128px] rounded shadow-2xl hide">
+                <a href="#" class="link-desktop">Pricing</a>
+                <a href="#" class="link-desktop">Overview</a>
+                <a href="#" class="link-desktop">Marketplace</a>
+                <a href="#" class="link-desktop">Features</a>
+                <a href="#" class="link-desktop">Integrations</a>
               </div>
-
-              <div class="dropdown flex flex-col items-center">
-                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold">Company 
-                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
-                </a>
-
-                <div class="dropdown-content hidden">
-                  <ul class="text-gray-600 text-left">
-                    <li class="link-footer"><a href="#">About</a></li>
-                    <li class="link-footer"><a href="#">Team</a></li>
-                    <li class="link-footer"><a href="#">Blog</a></li>
-                    <li class="link-footer"><a href="#">Careers</a></li>
-                  </ul>
-                </div>
-              </div>
-            
-              <div class="dropdown flex flex-col items-center">
-                <a href="#" class="dropbtn flex flex-row items-center gap-3 mb-2 font-overpass text-dark-gray-blue2 font-bold ">Connect 
-                  <img src="/images/icon-arrow-dark.svg" alt="arrow down">
-                </a>
-
-                <div class="dropdown-content pl-6 hidden">
-                  <ul class="text-gray-600 text-left">
-                    <li class="link-footer"><a href="#">Contact</a></li>
-                    <li class="link-footer"><a href="#">Newsletter</a></li>
-                    <li class="link-footer"><a href="#">LinkedIn</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="log-sign flex flex-col gap-3 mt-4">
-                <button class="cursor-pointer transition-all hover:scale-[1.1]">Login</button>
-                <button class="bg-gradient-to-l from-Cred to-VLred p-1.5 w-32 rounded-4xl text-white font-bold cursor-pointer transition-all hover:scale-[1.1]">Sign Up</button>
-              </div> 
-
             </div>
+
+            <div class="dropdown">
+              <a href="#" class="dropbtn relative flex flex-row items-center gap-1 text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Company <img src="/images/icon-arrow-light.svg"></a>
+              <div class="dropdown-content absolute top-[10%] flex flex-col bg-white p-4 w-[128px] rounded shadow-2xl hide">
+                <a href="#" class="link-desktop">About</a>
+                <a href="#" class="link-desktop">Team</a>
+                <a href="#" class="link-desktop">Blog</a>
+                <a href="#" class="link-desktop">Careers</a>
+              </div>
+            </div>
+            
+            <div class="dropdown flex flex-col gap-4 items-center">
+              <a href="#" class="dropbtn relative flex flex-row items-center gap-1 text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Conect <img src="/images/icon-arrow-light.svg"></a>
+              <div class="dropdown-content absolute top-[10%] flex flex-col bg-white p-4 w-[128px] rounded shadow-2xl hide">
+                <a href="#" class="link-desktop">Contact</a>
+                <a href="#" class="link-desktop">Newsletter</a>
+                <a href="#" class="link-desktop">LinkedIn</a>
+              </div>
+            </div>
+          
+          </div><!-- menu -->
+
+          <div class="login-signup flex flex-row gap-3">
+            <button class="font-ubuntu font-bold text-white cursor-pointer">Login</button>
+            <button class="font-ubuntu font-bold text-Cred bg-white w-26 p-2.5 rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
           </div>
 
-        </div>
-        
+        </div> <!--nav-->
+
       </div>
 
       <div class="heading-title p-7 flex flex-col items-center gap-6">
