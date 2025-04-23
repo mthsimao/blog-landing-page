@@ -199,9 +199,6 @@
   .top-\[-30\%\] {
     top: -30%;
   }
-  .top-\[10\%\] {
-    top: 10%;
-  }
   .bottom-6 {
     bottom: calc(var(--spacing) * 6);
   }
@@ -228,6 +225,9 @@
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
+  }
+  .block {
+    display: block;
   }
   .contents {
     display: contents;
@@ -292,6 +292,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-between {
     justify-content: space-between;
@@ -507,6 +510,11 @@
   .sm\:bg-\[url\(\/images\/bg-pattern-intro-desktop\.svg\)\] {
     @media (width >= 40rem) {
       background-image: url(/images/bg-pattern-intro-desktop.svg);
+    }
+  }
+  .md\:top-\[40px\] {
+    @media (width >= 48rem) {
+      top: 40px;
     }
   }
   .md\:mb-8 {
@@ -786,8 +794,13 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   display: none;
 }
-.show {
-  display: inline-block;
+.openedLink {
+  color: white;
+  text-decoration: underline;
+}
+.openedLink img {
+  transition: all .1s ease-in-out;
+  transform: rotate(180deg);
 }
 .link-desktop {
   font-size: 14px;

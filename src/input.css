@@ -73,10 +73,14 @@
   display: none;
 }
 
-.show {
-  display: inline-block;
+.openedLink {
+  color: white;
+  text-decoration: underline;
 }
-
+.openedLink img {
+  transition: all .1s ease-in-out;
+  transform: rotate(180deg)
+}
 
 .link-desktop {
   font-size: 14px;
@@ -88,3 +92,5 @@
 .link-desktop:hover {
   font-weight: bold;
 }
+
+

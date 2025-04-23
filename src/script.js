@@ -1,15 +1,42 @@
-window.addEventListener("load", function () {
-  // wait until the page loads before working with HTML elements
-  document.addEventListener("click", function (event) {
-    //click listener on the document
-    document.querySelectorAll(".dropdown-content").forEach(function (el) {
-      if (el !== event.target) el.classList.remove("show");
-      // close any showing dropdown that isn't the one just clicked
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdownButtons = document.querySelectorAll('.dropbtn');
+
+  dropdownButtons.forEach(btn => {
+    btn.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      const currentDropdown = btn.nextElementSibling;
+
+      // Fecha todos os dropdowns e remove 'openedLink' dos outros botões
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        if (drop !== currentDropdown) {
+          drop.style.display = 'none';
+        }
+      });
+
+      dropdownButtons.forEach(button => {
+        if (button !== btn) {
+          button.classList.remove('openedLink');
+        }
+      });
+
+      // Alterna visibilidade e classe com toggle
+      const isOpen = currentDropdown.style.display === 'block';
+      currentDropdown.style.display = isOpen ? 'none' : 'block';
+      btn.classList.toggle('openedLink', !isOpen);
     });
-    if (event.target.matches(".dropbtn")) {
-      event.target.closest(".dropdown").querySelector(".dropdown-content").classList.toggle("show");
+  });
+
+  // Fecha tudo ao clicar fora
+  document.addEventListener('click', function (e) {
+    const isDropdown = e.target.closest('.dropdown');
+    if (!isDropdown) {
+      document.querySelectorAll('.dropdown-content').forEach(drop => {
+        drop.style.display = 'none';
+      });
+      dropdownButtons.forEach(button => {
+        button.classList.remove('openedLink');
+      });
     }
-    // if this is a dropdown button being clicked, toggle the show class
   });
 });
-
