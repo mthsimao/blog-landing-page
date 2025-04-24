@@ -81,6 +81,11 @@
   transition: all .1s ease-in-out;
   transform: rotate(180deg)
 }
+.openedLink768 img{
+  transition: all .1s ease-in-out;
+  transform: rotate(180deg)
+}
+
 
 .link-desktop {
   font-size: 14px;
