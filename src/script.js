@@ -1,9 +1,14 @@
+// Para os dropdowns dentro do menu
+var nav = document.querySelector(".nav");
+
 document.addEventListener("DOMContentLoaded", function () {
   const dropdownButtons = document.querySelectorAll(".dropbtn");
 
   function getToggleClass() {
     return window.innerWidth > 768 ? "openedLink" : "openedLink768";
   }
+
+  // função para fechar todos os dropdowns
 
   function closeAllDropdowns() {
     document.querySelectorAll(".dropdown-content").forEach((drop) => {
@@ -13,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.classList.remove("openedLink", "openedLink768");
     });
   }
+
+  // função para setar escutadores nos botões
 
   function setupDropdownListeners() {
     dropdownButtons.forEach((btn) => {
@@ -50,9 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setupDropdownListeners();
 });
 
-
-
-
 // mudar as imagens do menu conforme muda a resolução da tela
 
 const updateImages = () => {
@@ -60,8 +64,6 @@ const updateImages = () => {
   let windowView = window.innerWidth;
 
   if (windowView < 768) {
-
-
     images.forEach((a) => {
       const image = a.querySelector("img");
       image.src = "/images/icon-arrow-dark.svg";
@@ -70,9 +72,50 @@ const updateImages = () => {
     images.forEach((a) => {
       const image = a.querySelector("img");
       image.src = "/images/icon-arrow-light.svg";
+      nav.classList.remove('hide')
     });
   }
 };
 
 window.addEventListener("load", updateImages);
 window.addEventListener("resize", updateImages);
+
+// Menu mobile
+
+let menuHamburguer = document.querySelector(".menu-hamburguer");
+let imgHamburguer = document.querySelector(".img-hamburguer");
+
+// Abre o menu, remove a classe de esconder, e seta a imagem de fechar o menu
+function openMenu() {
+  nav.classList.remove('hide')
+  nav.classList.add("show");
+  imgHamburguer.src = "/images/icon-close.svg";
+}
+
+// Fecha o menu, remove a classe de mostrar, e seta a imagem original do menu
+function closeMenu() {
+  nav.classList.remove("show");
+  nav.classList.add("hide");
+  imgHamburguer.src = "/images/icon-hamburger.svg";
+}
+
+// Função para verificar se tem a class('show')
+function verificar() {
+  if (nav.classList.contains("show")) {
+    openMenu();
+  } else {
+    closeMenu();
+  }
+}
+// Adicionar um escutador de click no botão
+imgHamburguer.addEventListener("click", () => {
+  nav.classList.toggle("show");
+  verificar();
+});
+
+// Fecha ao clicar fora
+document.addEventListener("click", function (e) {
+  if (!e.target.closest(".menu-hamburguer") && !e.target.closest(".dropdown") && !e.target.closest(".nav")) {
+    closeMenu();
+  }
+});
