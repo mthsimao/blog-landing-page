@@ -20,11 +20,11 @@
       <div class="flex flex-row justify-between items-center p-8 w-[90%] md:w-[95%] md:justify-start md:gap-8">
 
         <div id="logo">
-          <img src="/images/logo.svg" alt="Logo Blogr">
+          <img src="images/logo.svg" alt="Logo Blogr">
         </div>
 
         <div class="menu-hamburguer relative">
-          <img src="/images/icon-hamburger.svg" alt="icon-hamburger" class="img-hamburguer md:hidden">
+          <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="img-hamburguer md:hidden">
         </div>
 
         <div class="nav hide bg-white p-8 rounded shadow-cuzt w-[85%] absolute right-[8%] top-[10%] md:flex flex-col items-center md:p-0 md:relative md:bg-transparent md:shadow-[0] md:flex-row md:justify-between md:right-[0%] md:top-[0%] md:w-full">
@@ -35,7 +35,7 @@
 
               <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
                 Product 
-                <img class="img-arrow" src="/images/icon-arrow-light.svg">
+                <img class="img-arrow" src="images/icon-arrow-light.svg">
               </a>
 
               <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
@@ -56,7 +56,7 @@
 
               <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
                 Company 
-                <img class="img-arrow" src="/images/icon-arrow-light.svg">
+                <img class="img-arrow" src="images/icon-arrow-light.svg">
               </a>
               
               <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
@@ -73,7 +73,7 @@
               
               <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
                 Connect 
-                <img class="img-arrow" src="/images/icon-arrow-light.svg">
+                <img class="img-arrow" src="images/icon-arrow-light.svg">
               </a>
               
               <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
@@ -88,7 +88,7 @@
 
           </div><!-- menu -->
 
-          <div class="login-signup flex flex-col items-center md:flex-row gap-3 mt-8">
+          <div class="login-signup flex flex-col items-center md:flex-row gap-3 mt-8 md:mt-0">
             <button class="font-ubuntu font-medium md:font-bold  md:text-white cursor-pointer">Login</button>
             <button class="bg-gradient-to-r from-VLred to-Cred font-ubuntu font-medium md:font-bold text-white md:bg-none md:bg-white md:text-Cred w-26 py-[.4rem] px-[.8rem] rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
           </div>
@@ -117,28 +117,31 @@
 
   <main>
 
-    <div class="content-1 bg-white z-[8] mt-[4rem] flex flex-col gap-16 w-full items-center">
+    <div class="content-1 bg-white z-[8] mt-[4rem] flex flex-col p-8 gap-16 w-full items-center">
 
       <div class="title">
         <h1 class="text-dark-blue text-2xl font-[600] text-center pt-4 pb-4">Designed for the future</h1>
       </div>
 
-      <div class="flex flex-col items-center lg:flex-row-reverse lg:justify-around lg:gap-12">
+      <div class="flex flex-col items-center gap-8 lg:flex-row-reverse lg:justify-center lg:gap-[6rem] lg:w-full">
 
-        <div class="bg-[url(/images/illustration-editor-mobile.svg)] bg-center bg-no-repeat bg-cover h-[280px] w-[310px] mb-8 lg-:p-10 lg-:mb-0 lg:w-[500px] lg:h-[440px]"></div>
+        <div>
+          <img class="img-editor w-[500px]" src="images/illustration-editor-desktop.svg" alt="illustration editor desktop" />
+        </div>
         
         <div class="text-content md:p-4">
 
           <div class="flex flex-col gap-[12px] items-center text-center lg:text-left lg:items-start md:text-[14px]">
             <h2 class="w-[240px] lg:w-auto ">Introducing an extensible editor</h2>
-            <p class="w-[300px]  lg:w-[450px]">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+            <p class="w-[280px]  lg:w-[450px]">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
           </div>
           
           <div class="flex flex-col gap-[12px] items-center text-center lg:text-left lg:items-start md:text-[14px]">
             <h2 class="w-[240px] lg:w-auto ">Robust content management</h2>
-            <p class="w-[310px] lg:w-[450px]"> Flexible content management enables users to easily move through posts. Increase the usability your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+            <p class="w-[280px] lg:w-[450px]"> Flexible content management enables users to easily move through posts. Increase the usability your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
           </div>
         </div>
+
       </div>
 
     </div>
@@ -147,10 +150,10 @@
     <div class="bg-dark-gray-blue2 h-[520px] mt-[10rem] rounded-tr-[4rem] rounded-bl-[4rem] flex flex-col items-center relative lg:flex-row lg:items-stretch lg:h-[360px]">
         
       <div class="imagem1-wrapper overflow-hidden rounded-tr-[4rem] relative xs:rounded-tr-[0]">
-        <img src="/images/bg-pattern-circles.svg" class="imagem1 relative top-[-30%] w-[400px] lg:translate-x-[-50%] lg:left-[28%] lg:translate-y-[-55%] lg:top-[0%] lg:w-[1100px] "/>
+        <img src="images/bg-pattern-circles.svg" class="imagem1 relative top-[-30%] w-[400px] lg:translate-x-[-50%] lg:left-[28%] lg:translate-y-[-55%] lg:top-[0%] lg:w-[1100px] "/>
       </div>
 
-      <img class="absolute top-[-8rem] translate-x-[-50%] left-[50%] z-10 w-[320px] lg:left-[20%] lg:top-[-20%] lg:w-[500px]" src="/images/illustration-phones.svg">
+      <img class="absolute top-[-8rem] translate-x-[-50%] left-[50%] z-10 w-[320px] lg:left-[20%] lg:top-[-20%] lg:w-[500px]" src="images/illustration-phones.svg">
 
       <div class="element flex flex-col items-center gap-4 absolute bottom-6 lg:left-[70%] lg:translate-x-[-50%] lg:items-start lg:p-0 lg:pb-18">
         <h2 class="text-3xl text-white text-center font-overpass  lg:text-left">State of the Art Infrastructure</h2>
@@ -159,15 +162,17 @@
 
     </div>
 
-    <div class="flex flex-col items-center p-8 mt-[8rem] lg:flex-row lg:justify-center lg:gap-[8rem] w-full lg:pt-12 lg:pb-12">
+    <div class="flex flex-col items-center gap-8 p-4 my-[8rem] lg:flex-row lg:justify-center lg:gap-[4rem] w-full lg:py-12">
 
-      <div class="bg-[url(/images/illustration-laptop-mobile.svg)] bg-center bg-no-repeat bg-cover h-[320px] w-[310px] mb-8 lg-:p-10 lg-:mb-0 lg:w-[500px] lg:h-[550px]"></div>
+      <div>
+        <img class="img-laptop" src="images/illustration-laptop-desktop.svg" alt="illustration laptop desktop" />
+      </div>
 
       <div class="text-content">
 
         <div class="flex flex-col gap-[12px] items-center text-center lg:text-left lg:items-start md:text-[14px]">
           <h2 class="w-[240px] lg:w-auto">Free, open, simple</h2>
-          <p class="w-[310px] lg:w-[450px]">
+          <p class="w-[280px] lg:w-[450px]">
             Blogr is a free and open source application backed by a large community of helpful developers. It supports
             features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
             and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
@@ -176,7 +181,7 @@
         
         <div class="flex flex-col gap-[12px] items-center text-center lg:text-left lg:items-start md:text-[14px]">
           <h2 class="w-[240px] lg:w-auto">Powerful tooling</h2>
-          <p class="w-[300px] lg:w-[450px]">
+          <p class="min-w-[240px] max-w-[350px] lg:w-[450px]">
             Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
             capable of producing even the most complicated sites.
           </p>
@@ -192,7 +197,7 @@
       <div class="flex flex-col items-center gap-12 md:flex-row md:justify-between md:items-stretch w-full">
 
         <div class="logo">
-          <img src="/images/logo.svg" alt="Logo BLOGR">
+          <img src="images/logo.svg" alt="Logo BLOGR">
         </div>
 
         <div class="flex flex-col items-center md:items-start">
@@ -235,7 +240,6 @@
 
     </div>
   </footer>
-
   
   <script src="src/script.js"></script>
 

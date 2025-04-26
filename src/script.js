@@ -68,8 +68,8 @@ function setarClassNav() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', setarClassNav)
-window.addEventListener('resize', setarClassNav)
+window.addEventListener("DOMContentLoaded", setarClassNav);
+window.addEventListener("resize", setarClassNav);
 
 // mudar as imagens do menu conforme muda a resolução da tela
 
@@ -126,3 +126,26 @@ imgHamburguer.addEventListener("click", () => {
   nav.classList.toggle("show");
   verificar();
 });
+
+// mudar img do main
+
+let imgEditor = document.querySelector(".img-editor");
+let imgLaptop = document.querySelector(".img-laptop");
+
+function changeImgs() {
+  if (window.innerWidth <= 768) {
+    imgEditor.src = "/images/illustration-editor-mobile.svg";
+    imgEditor.classList.remove('w-[500px]')
+    imgEditor.classList.add('w-[410px]')
+    imgLaptop.src = "/images/illustration-laptop-mobile.svg";
+  } else {
+    imgEditor.src = "/images/illustration-editor-desktop.svg";
+    imgEditor.classList.add('w-[500px]')
+    imgEditor.classList.remove('w-[410px]')
+    imgLaptop.src = "/images/illustration-laptop-desktop.svg";
+    imgLaptop.classList.add('w-[500px]')
+  }
+}
+
+window.addEventListener("DOMContentLoaded", changeImgs);
+window.addEventListener("resize", changeImgs);
