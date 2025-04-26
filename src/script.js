@@ -57,6 +57,20 @@ document.addEventListener("DOMContentLoaded", function () {
   setupDropdownListeners();
 });
 
+// setar a classe "hide" no nav se a página for menor que 768
+function setarClassNav() {
+  if (!nav) return;
+
+  if (window.innerWidth < 768) {
+    nav.classList.add("hide");
+  } else {
+    nav.classList.remove("hide");
+  }
+}
+
+window.addEventListener('DOMContentLoaded', setarClassNav)
+window.addEventListener('resize', setarClassNav)
+
 // mudar as imagens do menu conforme muda a resolução da tela
 
 const updateImages = () => {
@@ -72,7 +86,6 @@ const updateImages = () => {
     images.forEach((a) => {
       const image = a.querySelector("img");
       image.src = "/images/icon-arrow-light.svg";
-      nav.classList.remove('hide')
     });
   }
 };
@@ -80,14 +93,14 @@ const updateImages = () => {
 window.addEventListener("load", updateImages);
 window.addEventListener("resize", updateImages);
 
-// Menu mobile
+// Abrir e fechar menu
 
 let menuHamburguer = document.querySelector(".menu-hamburguer");
 let imgHamburguer = document.querySelector(".img-hamburguer");
 
 // Abre o menu, remove a classe de esconder, e seta a imagem de fechar o menu
 function openMenu() {
-  nav.classList.remove('hide')
+  nav.classList.remove("hide");
   nav.classList.add("show");
   imgHamburguer.src = "/images/icon-close.svg";
 }
@@ -99,7 +112,7 @@ function closeMenu() {
   imgHamburguer.src = "/images/icon-hamburger.svg";
 }
 
-// Função para verificar se tem a class('show')
+// Função para verificar se tem a classe('show')
 function verificar() {
   if (nav.classList.contains("show")) {
     openMenu();
@@ -107,15 +120,9 @@ function verificar() {
     closeMenu();
   }
 }
+
 // Adicionar um escutador de click no botão
 imgHamburguer.addEventListener("click", () => {
   nav.classList.toggle("show");
   verificar();
-});
-
-// Fecha ao clicar fora
-document.addEventListener("click", function (e) {
-  if (!e.target.closest(".menu-hamburguer") && !e.target.closest(".dropdown") && !e.target.closest(".nav")) {
-    closeMenu();
-  }
 });
