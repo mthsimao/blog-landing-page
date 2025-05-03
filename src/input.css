@@ -19,7 +19,19 @@
   --font-ubuntu: "Ubuntu", sans-serif;
   --breakpoint-xs: 25rem;
   --breakpoint-x340: 350px;
+  --breakpoint-sv: 768px;
   --shadow-cuzt: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.link-desktop {
+  font-size: 14px;
+  margin-bottom: 2px;
+  letter-spacing: .025rem;
+  transition: all .1s;
+}
+
+.link-desktop:hover {
+  font-weight: bold;
 }
 
 .btn {
@@ -68,39 +80,6 @@
 
 .link-footer:hover {
   text-decoration: underline;
-}
-
-.dropdown-content {
-  display: none;
-}
-
-.openedLink {
-  color: white;
-  text-decoration: underline;
-}
-.openedLink img {
-  transition: all .1s ease-in-out;
-  transform: rotate(180deg)
-}
-
-.openedLink768 {
-  color: var(--color-dark-grayish-blue);
-}
-
-.openedLink768 img{
-  transition: all .1s ease-in-out;
-  transform: rotate(180deg);
-}
-
-.link-desktop {
-  font-size: 14px;
-  margin-bottom: 2px;
-  letter-spacing: .025rem;
-  transition: all .1s;
-}
-
-.link-desktop:hover {
-  font-weight: bold;
 }
 
 .hide { display: none }

@@ -17,85 +17,69 @@
   <header>
     <div class="bg-Cred bg-[url(/images/bg-pattern-intro-mobile.svg)] sm:bg-[url(/images/bg-pattern-intro-desktop.svg)] bg-center bg-no-repeat rounded-bl-[6rem] h-[550px] md:h-[480px] flex flex-col items-center gap-6">
 
-      <div class="flex flex-row justify-between items-center p-8 w-[90%] md:w-[95%] md:justify-start md:gap-8">
+      <div class="header-content flex flex-row items-center justify-between p-8 w-[90%] sv:w-full sv:justify-normal sv:gap-8">
 
-        <div id="logo">
+        <div class="logo">
           <img src="images/logo.svg" alt="Logo Blogr">
         </div>
 
-        <div class="menu-hamburguer relative">
-          <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="img-hamburguer md:hidden">
-        </div>
+        <div class="nav sv:w-full">
 
-        <div class="nav hide bg-white p-8 rounded shadow-cuzt w-[85%] absolute right-[8%] top-[10%] md:flex flex-col items-center md:p-0 md:relative md:bg-transparent md:shadow-[0] md:flex-row md:justify-between md:right-[0%] md:top-[0%] md:w-full">
-
-          <div class="menu flex flex-col gap-4 md:flex-row md:gap-4">
-          
-            <div class="dropdown relative flex flex-col items-center ">
-
-              <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
-                Product 
-                <img class="img-arrow" src="images/icon-arrow-light.svg">
-              </a>
-
-              <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
-                <div class="flex flex-col items-center md:items-start gap-1 ">
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Pricing</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Overview</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Marketplace</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Features</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Integrations</a>
-              
-                </div>
-              
-              </div>
-            
-            </div>
-
-            <div class="dropdown relative flex flex-col items-center">
-
-              <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
-                Company 
-                <img class="img-arrow" src="images/icon-arrow-light.svg">
-              </a>
-              
-              <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
-                <div class="flex flex-col items-center md:items-start gap-1">
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">About</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Team</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Blog</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Careers</a>
-                </div>
-              </div>
-            </div>
-            
-            <div class="dropdown relative flex flex-col items-center">
-              
-              <a href="#" class="dropbtn image-item flex flex-row items-center gap-1 md:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">
-                Connect 
-                <img class="img-arrow" src="images/icon-arrow-light.svg">
-              </a>
-              
-              <div class="dropdown-content p-4 md:absolute md:top-[40px] md:bg-white md:w-32 md:rounded-md md:shadow-cuzt">
-                <div class="flex flex-col items-center md:items-start gap-1">
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Contact</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">Newsletter</a>
-                  <a href="#" class="link-desktop font-[400] text-dark-grayish-blue md:text-black">LinkedIn</a>
-                </div>
-              </div>
-
-            </div>
-
-          </div><!-- menu -->
-
-          <div class="login-signup flex flex-col items-center md:flex-row gap-3 mt-8 md:mt-0">
-            <button class="font-ubuntu font-medium md:font-bold  md:text-white cursor-pointer">Login</button>
-            <button class="bg-gradient-to-r from-VLred to-Cred font-ubuntu font-medium md:font-bold text-white md:bg-none md:bg-white md:text-Cred w-26 py-[.4rem] px-[.8rem] rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
+          <div class="menu-hamburguer relative sv:hidden">
+            <img src="images/icon-hamburger.svg" alt="Icon menu icon-hamburger">
           </div>
 
-       
+          <div class="box-menu absolute right-[8%] top-[82px] w-[85%] bg-white rounded-lg p-10 flex flex-col items-center sv:relative sv:top-0 sv:right-0 sv:bg-transparent sv:w-full sv:flex-row sv:justify-between sv:p-0">
 
-        </div> <!--nav-->
+            <div class="dropdowns flex flex-col items-center gap-4 sv:flex-row">
+
+              <div class="dropdown">
+                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Product <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
+               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
+                  <ul>
+                    <li>Pricing</li>
+                    <li>Overview</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="dropdown">
+                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Company <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
+               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
+                  <ul>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="dropdown">
+                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Connect <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
+               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
+                  <ul>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>Linkedin</li>
+                  </ul>
+                </div>
+              </div>
+  
+            </div>
+
+            <div class="login-signup flex flex-col mt-10 gap-1.5 sv:flex-row sv:mt-0">
+              <button class="font-ubuntu font-medium md:font-bold  sv:text-white cursor-pointer">Login</button>
+              <button class="bg-gradient-to-r from-VLred to-Cred font-ubuntu font-medium sv:font-bold text-white sv:bg-none sv:bg-white sv:text-Cred w-26 py-[.4rem] px-[.8rem] rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
+            </div>
+          </div>
+
+         
+
+        </div>
 
       </div>
 
