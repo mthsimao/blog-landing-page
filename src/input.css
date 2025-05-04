@@ -6,6 +6,7 @@
   --color-dark-blue: hsl(208, 49%, 24%);
 
   --color-Grayish-blue: hsl(240, 2%, 79%);
+  --color-whitee: #ececec;
   --color-dark-grayish-blue: hsl(207, 13%, 34%);
   --color-dark-black-blue: hsl(240, 10%, 16%);
 
@@ -26,8 +27,8 @@
 .link-desktop {
   font-size: 14px;
   margin-bottom: 2px;
-  letter-spacing: .025rem;
-  transition: all .1s;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
 }
 
 .link-desktop:hover {

@@ -26,55 +26,59 @@
         <div class="nav sv:w-full">
 
           <div class="menu-hamburguer relative sv:hidden">
-            <img src="images/icon-hamburger.svg" alt="Icon menu icon-hamburger">
+            <img src="images/icon-hamburger.svg" id="icon-hamburguer" alt="Icon menu icon-hamburger">
           </div>
 
-          <div class="box-menu absolute right-[8%] top-[82px] w-[85%] bg-white rounded-lg p-10 flex flex-col items-center sv:relative sv:top-0 sv:right-0 sv:bg-transparent sv:w-full sv:flex-row sv:justify-between sv:p-0">
+          <div class="box-menu hidden">
 
-            <div class="dropdowns flex flex-col items-center gap-4 sv:flex-row">
+            <div class="menu absolute right-[8%] top-[82px] w-[85%] bg-white rounded-lg p-10 shadow-2xl flex flex-col items-center sv:relative sv:top-0 sv:right-0 sv:bg-transparent sv:shadow-[0] sv:w-full sv:flex-row sv:justify-between sv:p-0">
+              <div class="dropdowns flex flex-col items-center gap-4 sv:flex-row">
 
-              <div class="dropdown">
-                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Product <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
-               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
-                  <ul>
-                    <li>Pricing</li>
-                    <li>Overview</li>
-                    <li>Marketplace</li>
-                    <li>Features</li>
-                    <li>Integrations</li>
-                  </ul>
+                <div class="dropdown flex flex-col items-center">
+                  <a href="#" class="dropbtn flex flex-row items-center gap-1 font-overpass text-[.875rem] text-dark-gray-blue2 sv:text-whitee font-medium hover:text-white hover:underline">Product <img class="img-arrow" src="images/icon-arrow-dark.svg" data-large-src="images/icon-arrow-light.svg" alt="icon arrow"></a>
+                 <div class="dropdown-content hidden relative sv:absolute sv:top-[42px] sv:w-[128px] sv:bg-white p-4 sv:rounded sv:shadow-2xl">
+                    <ul class="flex flex-col gap-1 pt-2.5 sv:pt-0 text-dark-grayish-blue font-overpass sv:font-ubuntu font-medium text-center sv:text-left">
+                      <li class="link-desktop">Pricing</li>
+                      <li class="link-desktop">Overview</li>
+                      <li class="link-desktop">Marketplace</li>
+                      <li class="link-desktop">Features</li>
+                      <li class="link-desktop">Integrations</li>
+                    </ul>
+                  </div>
                 </div>
+    
+                <div class="dropdown flex flex-col items-center">
+                  <a href="#" class="dropbtn flex flex-row items-center gap-1 font-overpass text-[.875rem] text-dark-gray-blue2 sv:text-whitee font-medium hover:text-white hover:underline">Company <img class="img-arrow" src="images/icon-arrow-dark.svg" data-large-src="images/icon-arrow-light.svg" alt="icon arrow"></a>
+                 <div class="dropdown-content hidden relative sv:absolute sv:top-[42px] sv:w-[128px] sv:bg-white p-4 sv:rounded sv:shadow-2xl">
+                    <ul class="flex flex-col gap-1 pt-2.5 sv:pt-0 text-dark-grayish-blue font-overpass sv:font-ubuntu font-medium text-center sv:text-left">
+                      <li class="link-desktop">About</li>
+                      <li class="link-desktop">Team</li>
+                      <li class="link-desktop">Blog</li>
+                      <li class="link-desktop">Careers</li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <div class="dropdown flex flex-col items-center">
+                  <a href="#" class="dropbtn flex flex-row items-center gap-1 font-overpass text-[.875rem] text-dark-gray-blue2 sv:text-whitee font-medium hover:text-white hover:underline">Connect <img class="img-arrow" src="images/icon-arrow-dark.svg" data-large-src="images/icon-arrow-light.svg" alt="icon arrow"></a>
+                 <div class="dropdown-content hidden relative sv:absolute sv:top-[42px] sv:w-[128px] sv:bg-white p-4 sv:rounded sv:shadow-2xl">
+                    <ul class="flex flex-col gap-1 pt-2.5 sv:pt-0 text-dark-grayish-blue font-overpass sv:font-ubuntu font-medium text-center sv:text-left">
+                      <li class="link-desktop">Contact</li>
+                      <li class="link-desktop">Newsletter</li>
+                      <li class="link-desktop">Linkedin</li>
+                    </ul>
+                  </div>
+                </div>
+    
               </div>
   
-              <div class="dropdown">
-                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Company <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
-               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
-                  <ul>
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                  </ul>
-                </div>
+              <div class="login-signup flex flex-col mt-10 gap-1.5 sv:flex-row sv:mt-0">
+                <button class="font-ubuntu font-medium md:font-bold  sv:text-white cursor-pointer">Login</button>
+                <button class="bg-gradient-to-r from-VLred to-Cred font-ubuntu font-medium sv:font-bold text-white sv:bg-none sv:bg-white sv:text-Cred w-26 py-[.4rem] px-[.8rem] rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
               </div>
-  
-              <div class="dropdown">
-                <a href="#" class="dropbtn flex flex-row items-center gap-1 sv:text-Grayish-blue font-ubuntu font-medium hover:text-white hover:underline">Connect <img class="img-arrow" src="images/icon-arrow-dark.svg" alt="icon arrow"></a>
-               <div class="dropdown-content hidden opacity-0 scale-95 transition-all duration-200 ease-in-out absolute md:top-[72px] bg-white p-4 w-[128px] rounded shadow-2xl">
-                  <ul>
-                    <li>Contact</li>
-                    <li>Newsletter</li>
-                    <li>Linkedin</li>
-                  </ul>
-                </div>
-              </div>
-  
             </div>
 
-            <div class="login-signup flex flex-col mt-10 gap-1.5 sv:flex-row sv:mt-0">
-              <button class="font-ubuntu font-medium md:font-bold  sv:text-white cursor-pointer">Login</button>
-              <button class="bg-gradient-to-r from-VLred to-Cred font-ubuntu font-medium sv:font-bold text-white sv:bg-none sv:bg-white sv:text-Cred w-26 py-[.4rem] px-[.8rem] rounded-3xl cursor-pointer transition-all hover:bg-light-red2 hover:text-white">Sign Up</button>
-            </div>
+
           </div>
 
          
