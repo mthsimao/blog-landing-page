@@ -126,7 +126,7 @@ let img = document.querySelector("#icon-hamburguer");
 function removeHiddenMenu() {
   let res = window.innerWidth
 
-  if(res > 768) {
+  if(res >= 768) {
     boxMenu.classList.remove('hidden')
   } else {
     boxMenu.classList.add('hidden')
